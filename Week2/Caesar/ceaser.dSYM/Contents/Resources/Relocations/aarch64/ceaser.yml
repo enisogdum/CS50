@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/enisogdum/Desktop/My Codes/CS50/Week2/Ceaser/ceaser'
+relocations:     []
+...
