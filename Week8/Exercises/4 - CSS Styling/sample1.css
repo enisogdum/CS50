@@ -1,0 +1,59 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 20px;
+}
+
+/* Class selector */
+.centered {
+    text-align: center;
+}
+
+/* Element selectors */
+h1 {
+    color: navy;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ID selector */
+#about {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* Descendant selector */
+#about a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Pseudo-class */
+#about a:hover {
+    text-decoration: underline;
+}
+
+/* Class selector for the button */
+.button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: royalblue;
+}
