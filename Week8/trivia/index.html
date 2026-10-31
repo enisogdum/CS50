@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('#answer1').addEventListener('click', function() {
+            this.style.backgroundColor = 'green';});
+                 
+            document.querySelector('#answer2').addEventListener('click', function() {
+            this.style.backgroundColor = 'red';});
+
+            document.querySelector('#answer3').addEventListener('click', function() {
+            this.style.backgroundColor = 'red';});
+
+            document.querySelector('#answer4').addEventListener('click', function() {
+            this.style.backgroundColor = 'red';});
+            
+            document.querySelector('#answer5').addEventListener('click', function() {
+            this.style.backgroundColor = 'red';});
+        });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand?</h3>
+                <button id="answer1">6 people per 1 sheep</button>
+                <button id="answer2">3 people per 1 sheep</button>
+                <button id="answer3">1 person per 1 sheep</button>
+                <button id="answer4">1 person per 3 sheep</button>
+                <button id="answer5">1 person per 6 sheep</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+                <form>
+                    <input id="part2" type="text">
+                    <button id="number2">Submit</button>
+
+                    <p id="feedback"></p>
+                    <script>
+                        document.querySelector('form').addEventListener('submit', function(e){
+                            e.preventDefault();
+
+                            let input = document.querySelector('#part2');
+                            let feedback = document.querySelector('#feedback');
+                            let button = document.querySelector('#number2');
+                            if(input.value === "switzerland"){
+                                button.style.backgroundColor = 'green'
+                                feedback.innerHTML = 'Correct'
+                            }else
+                            {
+                                button.style.backgroundColor = 'red'
+                                feedback.innerHTML = 'Incorrect'
+                            }
+                            
+                        })
+                    </script>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
